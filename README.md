@@ -1,4 +1,4 @@
-# Microsoft Dynamics CRM Async Database Logger using NLog for Plugins
+# Microsoft Dynamics CRM Async Database Logger using NLog for Plugins/Workflow activities
 The idea of this project is to offer async logging capability saving log entries to a database that can easily be used on Microsoft Dynamic CRM plugins and workflow activities.
 
 The NLog logging API is really flexibel, easy to setup and fast. This is the url to the NLog project: http://nlog-project.org/
