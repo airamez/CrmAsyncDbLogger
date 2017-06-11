@@ -12,6 +12,9 @@ The Logging database objects scripts are in the "CrmSyncDbLogger.DatabaseObjects
 3. If the data is not saved in the check the exception to figure out the issue
 4. WHEN USING IN PRODUCTION NEVER SET THE RAISE EXCEPTION TO TRUE
 
+## Addiging to the Plugins DLL
+It is required to add the NLog.dll and CrmAsyncDbLogger.dll to the plugin deployment assembler using the ILMerge tool. https://www.microsoft.com/en-ca/download/details.aspx?id=17630
+
 ## Important considerations
 The string connection provided to the Init method could be retrieved in two ways:
 1. From the plugin step configuration (Secure or Unsecure)
