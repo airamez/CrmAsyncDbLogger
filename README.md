@@ -7,10 +7,10 @@ The only think I did was to create a Wrapper class that can easily be embebed in
 The Logging database objects scripts are in the "CrmSyncDbLogger.DatabaseObjects.sql"
 
 ## Steps to test
-1. Create a SQL Database and execute the 'DatabaseObjects.sql'
-2. Execute the CrmAsyncDbLoggerTest.IntegrationTest.Main_01() test
-3. If the data is not saved in the check the exception to figure out the issue
-4. WHEN USING IN PRODUCTION NEVER SET THE RAISE EXCEPTION TO TRUE
+1. Create a SQL Database and execute the 'DatabaseObjects.sql';
+2. Execute the CrmAsyncDbLoggerTest.IntegrationTest.Main_01() test;
+3. If the data is not saved in the database check the exception to figure out the issue. Remember the user has to have execute permission on the Stored Procedure;
+4. WHEN USING IN PRODUCTION NEVER SET THE RAISE EXCEPTION TO TRUE.
 
 ## Addiging to the Plugins DLL
 It is required to add the NLog.dll and CrmAsyncDbLogger.dll to the plugin deployment assembler using the ILMerge tool. https://www.microsoft.com/en-ca/download/details.aspx?id=17630
